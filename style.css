@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Fugaz+One&family=Open+Sans:wght@400;600;800&family=Press+Start+2P&family=Special+Elite&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --sans: "Open Sans", sans-serif;
+  --dosis: "Dosis", sans-serif;
+  --elite: "Special Elite", cursive;
+  --press: "Press Start 2P", cursive;
+  --fugaz: "Fugaz One", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd3476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.5);
+}
+header .row {
+  margin-top: 1.5rem;
+}
+header a {
+  font-family: var(--elite);
+  font-weight: 900;
+  font-size: 1em;
+  color: whitesmoke;
+}
+header span {
+  font-weight: 900;
+}
+.navbar-brand {
+  background: #dd2476;
+  background: var(--bggradient);
+  text-shadow: 0 0 5px #555;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  max-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 40%;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 1em 3em 1em 3em;
+}
+.dropdown-content a:hover {
+  background: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.section1 {
+  margin-bottom: 1.5rem;
+}
+.section1 span {
+  font-weight: 900;
+}
+header .nav-item {
+  padding: 0.9em;
+}
+header .navbar-brand {
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: var(--press);
+  color: #fff !important;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+h1 {
+  font-family: var(--dosis);
+  font-weight: 900;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+.row {
+  box-shadow: 0px 0px 10px rgba(120, 120, 120, 0.5) !important;
+  padding: 5%;
+
+  padding-bottom: 0;
+}
+.row p {
+  text-align: justify;
+}
+.headtext {
+  padding: 5%;
+}
+.card-img-top {
+  padding: 5%;
+}
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("ninjabg.jpg");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+.cover .content {
+  background: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  padding-top: 19vmin;
+}
+.cover .content h1 {
+  font-family: var(--press);
+  font-style: 6vmin;
+  color: rgb(255, 45, 45);
+  text-shadow: 0px 0px 5px #333;
+}
+.cover .content p {
+  font-family: var(--sans);
+  font-size: 2vmin;
+  font-weight: 800;
+  color: #e5e5e5;
+}
+.number .rect {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 10rem;
+  height: 7rem;
+
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(5, 0, 250, 0.35);
+}
+.number {
+  margin-top: -15vmin;
+}
+.number .rect h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: rgb(255, 45, 45);
+}
+.number .rect p {
+  font-size: 0.8rem;
+  font-weight: 900;
+  font-family: var(--elite);
+}
+.join h1 {
+  padding-top: 10vmin;
+}
+.join {
+  margin-bottom: 1.5rem;
+}
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 2vmin;
+}
+.section-4 .team {
+  padding: 2vmin 1vmin;
+  box-shadow: unset !important;
+}
+.section-4 .card {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.8);
+  max-width: 22rem;
+  z-index: 3;
+  box-shadow: 0px 0px 25px #525252;
+}
+.section-4 h3 {
+  font-family: var(--dosis);
+  color: rgb(35, 252, 180);
+  text-shadow: 0 0 5px #55ff88;
+  font-weight: 900;
+}
+.section-4 .team .card .card-text {
+  font-family: var(--fugaz);
+  color: red;
+  font-weight: normal;
+  color: #999;
+}
+.section-4 a {
+  font-size: 1.5rem;
+}
+.carousel * {
+  overflow: unset !important;
+  z-index: 0;
+}
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+footer .row {
+  box-shadow: unset !important;
+}
+.fab {
+  transition: 0.3s;
+}
+.input-group-text {
+  transition: 0.3s;
+  border: 0 !important;
+}
+.fa-youtube:hover {
+  color: #c4302b;
+  cursor: pointer;
+}
+.fa-twitter:hover {
+  color: #00acee;
+  cursor: pointer;
+}
+.fa-instagram:hover {
+  color: #fccc63;
+  cursor: pointer;
+}
+.fa-facebook-f:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+boot {
+  color: tomato;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: var(--sans);
+}
+.input-group-text:hover {
+  background-color: tomato;
+  background: var(--bggradient);
+  color: whitesmoke;
+  border: 0;
+}
+footer input::placeholder {
+  color: whitesmoke !important;
+}
+footer .column i + i {
+  padding: 0 0.5em;
+}
+.navbar-light .navbar-toggler {
+  border: 0 !important;
+}
+.ham {
+  color: transparent;
+  background: var(--bggradient);
+  background-clip: text;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  transition: all 1.5s ease;
+}
+@media only screen and (max-width: 500px) {
+  .sticky {
+    padding-top: 2em;
+  }
+  .row {
+    box-shadow: unset !important;
+  }
+  .cover {
+    background-position: -22rem -20rem;
+    background-size: 115%;
+  }
+  .number .rect h1 {
+    font-weight: 500;
+    font-family: var(--sans);
+    font-size: 1.5em;
+  }
+  .number .rect {
+    width: 4rem;
+    margin: 0.1rem;
+    height: 3.5rem;
+  }
+  .number .rect p {
+    font-family: var(--dosis);
+    font-size: 0.5rem;
+  }
+  .number {
+    margin-top: -10vmin;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cover {
+    background-position: -85vmin -45vmin;
+    background-size: 105%;
+  }
+  .navbar-brand {
+    margin-left: 6rem !important;
+  }
+  header .nav-item:last-child {
+    padding-right: 10.5em;
+  }
+  .number .rect {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(5, 0, 250, 0.35);
+  }
+  .number {
+    margin-top: -15vmin;
+  }
+}
