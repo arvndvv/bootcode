@@ -38,3 +38,10 @@ $(window).scroll(function () {
     nCount(".rect > h1");
   }
 });
+
+function ninja() {
+  $("#nin").show("slow", "swing");
+}
+function fighter() {
+  $("#fig").show("slow", "swing");
+}
