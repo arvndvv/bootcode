@@ -4,6 +4,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
@@ -167,8 +168,13 @@ header .nav-link:hover {
   padding: 0;
   background: rgba(0, 0, 0, 0.8);
   max-width: 22rem;
+  min-height: 30rem;
   z-index: 3;
   box-shadow: 0px 0px 25px #525252;
+  margin-top: 5vmin;
+}
+.section-4 .card .card-text {
+  text-align: center !important;
 }
 .section-4 h3 {
   font-family: var(--dosis);
@@ -244,7 +250,7 @@ footer .column i + i {
 .ham {
   color: transparent;
   background: var(--bggradient);
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 .sticky {
   position: fixed;
@@ -254,7 +260,22 @@ footer .column i + i {
   z-index: 999;
   transition: all 1.5s ease;
 }
+.msg {
+  padding-top: 1.5em;
+  display: none;
+}
+.section-lvl {
+  margin-bottom: 1.5rem;
+}
+.section-lvl span {
+  font-size: 1.5em;
+
+  font-weight: 900;
+}
 @media only screen and (max-width: 500px) {
+  .section-4 .card {
+    max-width: 18rem;
+  }
   .sticky {
     padding-top: 2em;
   }
@@ -284,6 +305,9 @@ footer .column i + i {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .section-4 .card {
+    min-width: 22rem;
+  }
   .cover {
     background-position: -85vmin -45vmin;
     background-size: 105%;
